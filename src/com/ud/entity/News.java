@@ -11,9 +11,8 @@ import java.io.Serializable;
 public class News implements Serializable {
 
 	private static final long serialVersionUID = -3751081326491479189L;
-
 	// ID
-	private int id;
+	private String id;
 	// 标题
 	private String title;
 	// 内容
@@ -37,11 +36,11 @@ public class News implements Serializable {
 	// 发布时间
 	private int issueDate;
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
