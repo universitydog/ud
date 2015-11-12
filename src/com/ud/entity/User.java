@@ -47,5 +47,6 @@ public class User implements Serializable {
 	private String createDate;
 	// 个人信息是否完整
 	private boolean isWholeInfo;
+	
 
 }
