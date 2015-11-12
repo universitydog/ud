@@ -35,7 +35,9 @@ public class User implements Serializable {
 	private String accountName;
 	// 密码
 	private String password;
-	// 创建时间
+	/**
+	 * 创建时间
+	 */
 	private String createDate;
 
 	public int getId() {
