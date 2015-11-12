@@ -11,45 +11,27 @@ import java.io.Serializable;
 public class DogNestMember implements Serializable {
 
 	private static final long serialVersionUID = -6237581151087779286L;
-	// ID
+	/**
+	 *  ID
+	 */
 	private int id;
-	// 成员用户id [外键]
-	private int memberUserId;
-	// 加入时间
+	/**
+	 *  成员-用户id [外键]
+	 */
+	private int userId;
+	/**
+	 *  加入时间
+	 */
 	private String joinDate;
-	// 狗窝id [外键]
+	/**
+	 *  狗窝id [外键]
+	 */
 	private int dogNestId;
+	/**
+	 *  审核状态，0，审核中，1通过，2拒绝
+	 */
+	private String checkType;
 
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public int getMemberUserId() {
-		return memberUserId;
-	}
-
-	public void setMemberUserId(int memberUserId) {
-		this.memberUserId = memberUserId;
-	}
-
-	public String getJoinDate() {
-		return joinDate;
-	}
-
-	public void setJoinDate(String joinDate) {
-		this.joinDate = joinDate;
-	}
-
-	public int getDogNestId() {
-		return dogNestId;
-	}
-
-	public void setDogNestId(int dogNestId) {
-		this.dogNestId = dogNestId;
-	}
+	
 
 }
